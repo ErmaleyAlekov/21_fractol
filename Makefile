@@ -19,4 +19,4 @@ fclean:
 	@rm -f -v $(NAME) $(OBJECT)
 re: fclean all
 
-.PHONY: all clean fclean re del test
+.PHONY: all clean fclean re

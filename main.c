@@ -1,24 +1,9 @@
 #include "f.h"
 
-void	put_image(t_str *point)
-{
-	int	a;
-	int	b;
-
-	b = -1;
-	while (++b < 600)
-	{
-		a = 999;
-		while (++a < 1000)
-		{
-			point->i = (b * 1000 * 4) + (a * 4);
-			point->ch[point->i + 1] = 87;
-			point->ch[point->i + 2] = 54;
-			point->ch[point->i + 3] = 0;
-		}
-	}
-	mlx_put_image_to_window(point->mlx, point->win, point->img, 0, 0);
-}
+// void	put_image(t_str *point)
+// {
+// 	mlx_put_image_to_window(point->mlx, point->win, point->img, 0, 0);
+// }
 
 void	iter_loop(t_str *point)
 {

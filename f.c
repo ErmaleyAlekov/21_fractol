@@ -44,7 +44,7 @@ void	julia(t_str *point)
 		}
 		point->y_y++;
 	}
-	put_image(point);
+	mlx_put_image_to_window(point->mlx, point->win, point->img, 0, 0);
 	mlx_hook(point->win, 4, 1, m_press, point);
 	mlx_hook(point->win, 6, 1, m_move, point);
 	mlx_hook(point->win, 2, 1, k_press, point);
@@ -80,7 +80,7 @@ void	mandelbrot(t_str *point)
 		point->y_y++;
 	}
 	point->stop = 1;
-	put_image(point);
+	mlx_put_image_to_window(point->mlx, point->win, point->img, 0, 0);
 	mlx_hook(point->win, 4, 1, m_press, point);
 	mlx_hook(point->win, 6, 1, m_move, point);
 	mlx_hook(point->win, 2, 1, k_press, point);

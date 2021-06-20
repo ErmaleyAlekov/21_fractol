@@ -25,6 +25,13 @@ int	k_press(int k_c, t_str *point)
 		free(point->mlx);
 		exit(0);
 	}
+	if ((k_c == 55) + (k_c == 13))
+	{
+		mlx_destroy_image(point->mlx, point->img);
+		mlx_destroy_window(point->mlx, point->win);
+		free(point->mlx);
+		exit(0);
+	}
 	return (0);
 }
 

@@ -63,7 +63,7 @@ int	main(int arg, char *argv[])
 {
 	t_str	p;
 
-	if (arg > 2)
+	if (arg >= 2)
 	{
 		if (ft_strcmp(argv[1], "julia") == 0 || ft_strcmp(argv[1]
 				, "mandelbrot") == 0)

@@ -48,9 +48,9 @@ int	m_move(int x, int y, t_str *p)
 
 int	m_press(int button, int x, int y, t_str *point)
 {
-	if (button == 5 && point->stop == 1)
+	if (button == 5)
 		zoom(point, (double)x, (double)y, 1.1);
-	else if (button == 4 && point->stop == 1)
+	else if (button == 4)
 		zoom(point, (double)x, (double)y, 0.9);
 	check_fractol(point);
 	return (1);
